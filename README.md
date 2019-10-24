@@ -1,27 +1,10 @@
-# WebWorkerTest
+Usefull Links:
+https://blog.angularindepth.com/improve-performance-with-web-workers-497931fdef1b
+https://medium.com/@ganeshsurfs/non-blocking-performant-web-worker-in-your-angular-application-808fb9ab98c2
+https://angular.io/guide/web-worker
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+Brief:
+Web Workers allow you to run CPU intensive computations in a background thread, freeing the main thread to update the user interface.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This example is an expriement of the performance of the web worker the expriement is looping through array of 600 numbers and checks  wheather a number is prime or not one time in the main thread and the other time in another thread (worker thread)
